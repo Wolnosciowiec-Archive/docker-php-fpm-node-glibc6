@@ -1,11 +1,11 @@
-PHP-FPM 7.0 with Node on GLibC 6
+PHP-FPM 7.1 with Node on GLibC 6
 ================================
 
 As not every application is compatible with MuSL on Alpine, this image is based on Ubuntu Xenial
 which makes it compatible with PhantomJS in any version, including 2.5
 
 Includes:
-- PHP-FPM 7.0
+- PHP-FPM 7.1
 - glibc6 based OS (Ubuntu Xenial)
 - nodejs
 - make
