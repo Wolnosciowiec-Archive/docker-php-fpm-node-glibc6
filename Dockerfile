@@ -6,8 +6,9 @@ RUN apt-get update && apt-get install -y php7.0-fpm php7.0-mysql php7.0-sqlite p
 ADD supervisord.conf /etc/supervisor/conf.d/
 ADD entrypoint-php-node.sh /entrypoint-php-node.sh
 ADD etc/php/pool.conf /etc/php/7.0/fpm/pool.d/www.conf
+ADD provision-on-deployment.sh /provision-on-deployment.sh
 
-RUN chmod +x /entrypoint-php-node.sh
+RUN chmod +x /entrypoint-php-node.sh && chmod +x /provision-on-deployment.sh
 
 EXPOSE 9000
 
