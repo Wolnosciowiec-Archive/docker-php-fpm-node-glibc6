@@ -7,6 +7,8 @@ RUN set -x && \
     apt-get update && \
     apt-get install -y php7.1-fpm php7.1-mysql php7.1-sqlite php7.1-gd php7.1-bz2 php7.1-opcache supervisor cron rsyslog libhyphen0 make && \
     mkdir -p /run/php && \
+    mkdir -p /home/node -p && \
+    chown node:node /home/node -R && \
     php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
     php composer-setup.php && \
     php -r "unlink('composer-setup.php');" && \
