@@ -1,4 +1,4 @@
-PHP-FPM 7.2 with Node on GLibC 6
+PHP-FPM 7.1 with Node on GLibC 6
 ================================
 
 As not every application is compatible with MuSL on Alpine, this image is based on Ubuntu Xenial
@@ -7,7 +7,7 @@ which makes it compatible with PhantomJS in any version, including 2.5
 Branch "chromium" additionally contains the Chromium browser with Chromedriver installed.
 
 Includes:
-- PHP-FPM 7.2
+- PHP-FPM 7.1
 - glibc6 based OS (Ubuntu Xenial)
 - nodejs
 - make
